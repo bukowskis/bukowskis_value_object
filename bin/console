@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "bukowskis_value_object"
+
+require "pry"
+
+def reload!
+  files = $LOADED_FEATURES.select { |feat| feat =~ %r{/bukowskis_value_object/} }
+  files.each { |file| load file }
+end
+
+Pry.start
