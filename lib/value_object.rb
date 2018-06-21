@@ -1,4 +1,5 @@
 require 'dry-initializer'
+require 'value_object/permissive'
 
 module ValueObject
   def self.included(base)
