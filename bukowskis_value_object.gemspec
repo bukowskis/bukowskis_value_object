@@ -5,8 +5,6 @@ Gem::Specification.new do |s|
   s.summary     = 'Module for creating value objects'
   s.description = 'Module for creating value objects'
 
-  s.metadata["allowed_push_host"] = "none"
-
   s.files = Dir["{lib}/**/*", "README.md"]
   s.test_files = Dir["spec/**/*"]
 
